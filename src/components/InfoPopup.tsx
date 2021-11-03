@@ -28,33 +28,55 @@ const InfoPopup = () => {
 		<div style={{ position: 'absolute', right: 10 }}>
 			<Button onClick={handleClickOpen}>INFO</Button>
 			<Dialog open={open} onClose={handleClose} aria-labelledby='alert-dialog-title' aria-describedby='alert-dialog-description'>
-				<DialogTitle id='alert-dialog-title'>What is Roundware?</DialogTitle>
+				<DialogTitle id='alert-dialog-title'>About Be Here Stories</DialogTitle>
 				<DialogContent dividers>
-					<Typography variant={'h6'} gutterBottom>
-						Roundware is:
-					</Typography>
-					<Typography gutterBottom>an open, flexible, distributed framework which collects, stores, organizes and re-presents audio content.</Typography>
-					<Typography gutterBottom>It lets you collect audio from anyone with a smartphone or web access, upload it to a central repository along with its metadata and then filter it and play it back collectively in continuous audio streams.</Typography>
-					<Divider />
-					<Typography variant={'h6'} gutterBottom>
-						<br />
-						With Roundware, you can:
-					</Typography>
-					<ul>
-						<li>create a seamless, non-linear, location-sensitive layer of audio in any geographic space mixed on the fly based on participant input</li>
-						<li>collect audio from participants in real-time via iOS, Android and web-based devices</li>
-						<li>tag collected audio with location and project-based metadata for filtering</li>
-					</ul>
-					<Divider />
-					<Typography variant={'h6'} gutterBottom>
-						<br />
-						Join the fun...
-					</Typography>
-					<Typography gutterBottom>Roundware is an actively-developed open-source project and is free for anyone to use. It was initially developed for sound art installations, but has since been used for innovative museum audio tours as well as other educational purposes.</Typography>
 					<Typography gutterBottom>
-						You can check out codebases for the server and various frameworks on our&nbsp;
-						<Link href='https://github.com/roundware'>GitHub page</Link>.
+						This project, a collaboration with the Peale in Baltimore and
+						the Museum on Main Street project of the Smithsonian Institution,
+						preserves and shares authentic stories from diverse American
+						communities. By providing a free and open platform for
+						ocation-based storytelling, we aim to help the whole story
+						of the United States be told and heard, and to bridge what is
+						often called the "rural/urban divide" in the United States.
 					</Typography>
+					<Typography gutterBottom>
+						If you are listening via the location-aware app, you will hear
+						stories that were recorded around you. You can also use the Map
+						feature in the Listen section of the app to play stories from
+						locations and towns anywhere in the United States.
+					</Typography>
+					<Typography gutterBottom>
+						Many stories that are recorded in this app are also published on the&nbsp;
+						<Link href="www.MuseumOnMainStreet.org">
+							Museum on Main Street website
+						</Link> and included in the
+						Smithsonian's "Stories from Main Street" archive. If at any point, storytellers
+						wish to remove their stories, they may email us at&nbsp;
+						<Link href="mailto:online@thePealeCenter.org">
+							online@thePealeCenter.org
+						</Link>.
+					</Typography>
+					<Typography gutterBottom>
+						We reserve the right to remove content that violates copyright,
+						trademark, or intellectual property, or promotes impersonation,
+						unlawful conduct, harassment, or hate speech.
+					</Typography>
+					<Typography gutterBottom variant={"h6"}>
+            Find Your Story on the Map
+          </Typography>
+          <a href="./listen">
+            <img id="map" src={assetMapGraphic} style={{width: "100%"}} />
+          </a>
+          <hr />
+          <img id="logo" src={pealeLogoSmall} style={{width: 300}} />
+          <Typography gutterBottom>
+            <em>Be Here Stories</em> is an initiative of the Peale in Baltimore, Maryland.
+            The Peale is a 501(c)3 non-profit organization and is restoring the oldest
+            museum building in the United States in partnership with the City of Baltimore.
+            Through its programs, the Peale Center aims to illuminate authentic stories of
+            Baltimore's people and places, while reinventing the civic museum in the
+            creative and innovative spirit of its founder, artist Rembrandt Peale.
+          </Typography>
 
 					{/*<a href="./listen">
             <img id="map" src={assetMapGraphic} style={{width: "100%"}} />
