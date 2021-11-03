@@ -32,9 +32,9 @@ export const LandingPage = () => {
 					</Grid>
 					<Grid item sm={12}>
 						<Typography variant={'subtitle1'} className={classes.landingTagline} style={{ textAlign: 'center', height: '15vh' }}>
-							Contributory Audio Augmented Reality
+							A Storytelling Project with the Peale and
 							<br />
-							for Art, Education and Documentary
+							Museum on Main Street, Smithsonian
 						</Typography>
 					</Grid>
 				</Grid>
