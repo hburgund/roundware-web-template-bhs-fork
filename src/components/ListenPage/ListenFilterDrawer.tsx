@@ -97,7 +97,7 @@ const ListenFilterDrawer = () => {
 			</List>
 			<Divider />
 			<List>
-				<ListItem>
+				{/*<ListItem>
 					<MuiPickersUtilsProvider utils={DateFnsUtils}>
 						<KeyboardDatePicker
 							disableToolbar
@@ -131,7 +131,7 @@ const ListenFilterDrawer = () => {
 						/>
 					</MuiPickersUtilsProvider>
 				</ListItem>
-				<Divider />
+				<Divider />*/}
 				<ListItem key='tags-header'>
 					<ListItemIcon>
 						<LabelIcon />
