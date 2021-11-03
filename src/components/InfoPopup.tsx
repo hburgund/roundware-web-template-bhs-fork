@@ -10,6 +10,9 @@ import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
 import Link from '@material-ui/core/Link';
 
+import pealeLogoSmall from '../assets/peale-text-white.png';
+import assetMapGraphic from '../assets/bhs-map.jpg';
+
 const InfoPopup = () => {
 	const [open, setOpen] = useState(false);
 
